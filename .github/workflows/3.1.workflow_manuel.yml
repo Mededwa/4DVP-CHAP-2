@@ -13,12 +13,14 @@ on:
       class:
         description: "Class"
         required: true
-        type: string
-        default: "jedi"
-        # Valeurs possibles: jedi, sith, rebel
+        type: choice
+        options:
+          - "jedi"
+          - "sith"
+          - "rebel"
 jobs:
   player_infos:
     runs-on: ubuntu-latest
     steps:
     - name: "Display Player Infos"
-      run: echo "Le Joueur ${{ github.event.inputs.username }} est de niveau ${{ github.event.inputs.level }} et joue un ${{ github.event.inputs.class }}."
+      run: echo "Le Joueur ${{ inputs.username }} est de niveau ${{ inputs.level }} et joue un ${{ inputs.class }}."
