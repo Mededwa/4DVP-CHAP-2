@@ -1,4 +1,4 @@
-name: Mon Workflow
+name: 2.1] Simple workflow
 on: 
   push:
     branches: [ main ]
