@@ -1,14 +1,14 @@
-name: "3.3] Workflow avec plusieurs évenements déclencheurs"
-on:
-  push:
-  workflow_dispatch:
-  schedule:
-    - cron: "0/10 * * * *"
-jobs:
-  triggered_by:
-    name: "Triggered by"
-    runs-on: ubuntu-latest
-    steps:
-      - name: "Triggered by"
-        run: |
-          echo "Le job a été déclenché par un événement de type ${{ github.event_name }}."
+#name: "3.3] Workflow avec plusieurs évenements déclencheurs"
+#on:
+# push:
+#  workflow_dispatch:
+#  schedule:
+#    - cron: "0/10 * * * *"
+#jobs:
+#  triggered_by:
+#    name: "Triggered by"
+#    runs-on: ubuntu-latest
+#    steps:
+#      - name: "Triggered by"
+#        run: |
+#          echo "Le job a été déclenché par un événement de type ${{ github.event_name }}."
