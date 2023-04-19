@@ -1,0 +1,27 @@
+name: "2.2] Workflow avec plusieurs jobs"
+on:
+  push:
+
+jobs:
+  first_job:
+    name: "First job"
+    runs-on: ubuntu-latest
+    steps:
+    - name: "First Job"
+      run: |  
+        echo "Ceci est le premier job."
+  second_job:
+    name: "Second job"
+    runs-on: ubuntu-latest
+    steps:
+    - name: "Second Job"
+      run: |
+        echo "Ceci est le second job."
+  third_job:
+    name: "Third job"
+    runs-on: ubuntu-latest
+    steps:
+    - name: "Third job"
+      run: |
+        echo "Ceci est le troisième job."
+    
