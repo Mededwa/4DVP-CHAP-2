@@ -1,0 +1,12 @@
+name: "3.4] utilisation de l'action checkout"
+on:
+  push:
+jobs:
+  checkout:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Checkout"
+        uses: actions/checkout@v2
+        
+      - name: "Affiche Readme"
+        run: cat README.md
