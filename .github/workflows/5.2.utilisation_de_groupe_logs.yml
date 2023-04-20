@@ -1,0 +1,16 @@
+name: "5.2] Utilisation de groupe de logs"
+
+on:
+  push:
+jobs:
+  log_group:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Log group"
+        run: |
+          echo "::group::ecole-it"
+          echo "hello, ecole-it"
+          echo "::endgroup::"
+      - name: "Log out of group"
+        run: |
+          echo "ceci n'est pas dans le groupe."
