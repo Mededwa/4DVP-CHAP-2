@@ -1,0 +1,13 @@
+name: "4.1] Utiliser des workflow complexes"
+
+on:
+  push:
+env:
+  MESSAGE: "Ceci est une variable d'environnement"
+
+jobs:
+  display_env:
+    runs-on: ubuntu-latest
+    steps:
+    - name: "Display env"
+      run: echo $MESSAGE
