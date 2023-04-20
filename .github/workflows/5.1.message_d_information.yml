@@ -1,10 +1,10 @@
-name: "5.1] Message d'informations
-
+name: "5.1] Message d'informations"
 on:
   push:
 jobs:
   information_display:
     runs-on: ubuntu-latest
+    name: "Affichage"
     steps:
       - name: "Notice"
         run: |
